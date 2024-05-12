@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Drivers Seat Temp</string>
+    <string name="theme">Drivers Seat Temp</string>
+    <string name="temp">18</string>
+    <string name="cel">℃</string>
+    <string name="button_up_temp">+</string>
+    <string name="button_down_temp">-</string>
+</resources>

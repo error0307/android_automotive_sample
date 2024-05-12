@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF6B5"
+    android:orientation="vertical"
+    tools:context="com.android.automotivesample.MainActivity">
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theme"
+        android:textColor="@color/theme_color"
+        android:textSize="90sp" />
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="500sp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="@string/temp"
+        android:textColor="@color/temp_color"
+        android:textSize="360sp" />
+
+    <TextView
+        android:id="@+id/cel"
+        android:layout_width="wrap_content"
+        android:layout_height="500sp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/temp"
+        android:text="@string/cel"
+        android:textColor="@color/cel_color"
+        android:textSize="360sp" />
+
+    <Button
+        android:id="@+id/up_temp_button"
+        android:layout_width="750sp"
+        android:layout_height="250sp"
+        android:layout_alignTop="@id/temp"
+        android:layout_toStartOf="@id/temp"
+        android:onClick="onClickTempCtrl"
+        android:text="@string/button_up_temp"
+        android:textSize="90sp" />
+
+    <Button
+        android:id="@+id/down_temp_button"
+        android:layout_width="750sp"
+        android:layout_height="250sp"
+        android:layout_below="@id/up_temp_button"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/temp"
+        android:onClick="onClickTempCtrl"
+        android:text="@string/button_down_temp"
+        android:textSize="90sp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+
+</RelativeLayout>
